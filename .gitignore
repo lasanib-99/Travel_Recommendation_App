@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
@@ -50,6 +51,15 @@ coverage.xml
 .hypothesis/
 .pytest_cache/
 cover/
+
+# Ignore Streamlit temp files
+.streamlit/
+
+# Ignore environment variables
+.env
+
+# Ignore VSCode settings
+.vscode/
 
 # Translations
 *.mo
@@ -123,12 +133,12 @@ celerybeat.pid
 
 # Environments
 .env
-.venv
+.venv_gn/
 env/
-venv/
+venv_gn//
 ENV/
 env.bak/
-venv.bak/
+venv_gn/.bak/
 
 # Spyder project settings
 .spyderproject
